@@ -1,6 +1,6 @@
 dockerfile = $(abspath .)/Dockerfile
 docker_image_name = verilator
-docker_cmd = docker run -v $(abspath .):/home -it $(docker_image_name)
+docker_cmd = docker run -it $(docker_image_name)
 
 default: build_docker
 
